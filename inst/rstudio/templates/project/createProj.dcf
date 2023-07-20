@@ -1,15 +1,33 @@
 Binding: createProj
-Title: My personal Project Template
-OpenFiles: analysis.R
+Title: Sakurai Project Template
+OpenFiles: scripts/1.0.function.R
 
-Parameter: data
+Parameter: geno
 Widget: CheckboxInput
-Label: Create "data" folder ?
+Label: Create "genotype" folder ?
 Default: On
 Position: left
 
-Parameter: out
+Parameter: pheno
 Widget: CheckboxInput
-Label: Create "output" folder ?
+Label: Create "phenotype" folder ?
+Default: On
+Position: left
+
+Parameter: ref
+Widget: CheckboxInput
+Label: Create "reference" folder ?
+Default: On
+Position: right
+
+Parameter: mid
+Widget: CheckboxInput
+Label: Create "midstream" folder ?
+Default: On
+Position: right
+
+Parameter: res
+Widget: CheckboxInput
+Label: Create "results" folder ?
 Default: On
 Position: right
