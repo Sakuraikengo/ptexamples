@@ -5,9 +5,15 @@ createProj <- function(path, ...) {
   # collect inputs' parameters
   params <- list(...)
 
-  # create .R file
-  file <- paste0(path, "/scripts/1.0.function.R")
-  file.create(file)
+  # # create .R file
+  # file <- paste0(path, "/1.0.function.R")
+  # file.create(file)
+
+  # create "scripts" dir
+  if (params[["scripts"]]) {
+    dtaDir <- paste0(path, "/scripts")
+    dir.create(dtaDir, recursive = TRUE, showWarnings = FALSE)
+  }
 
   # create "genotype" dir
   if (params[["geno"]]) {

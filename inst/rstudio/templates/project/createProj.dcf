@@ -1,6 +1,12 @@
 Binding: createProj
 Title: Sakurai Project Template
-OpenFiles: scripts/1.0.function.R
+OpenFiles: NULL
+
+Parameter: scripts
+Widget: CheckboxInput
+Label: Create "scripts" folder ?
+Default: On
+Position: left
 
 Parameter: geno
 Widget: CheckboxInput
